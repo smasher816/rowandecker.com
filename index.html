@@ -1,0 +1,513 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A computer engineering and electrical engineering student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Rowan Decker</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" sizes="192x192" href="/android-chrome-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Rowan Decker">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="/favicon-32x32.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #view-source {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: 900;
+      }
+      #avatar {
+	display: block;
+	width: 100%;
+	height: auto;
+      }
+      h6 {
+	margin-bottom: 0;
+      }
+      ul {
+	margin-top: 0;
+      }
+      .fa {
+	font-size: 24px !important;
+      }
+      .skill-list {
+	width: 650px;
+      }
+      .section__circle-container__circle > img {
+	width: 64px;
+	height: auto;
+      }
+      .mdl-list__item--two-line {
+	height: 48px;
+      }
+      .mdl-list__item {
+	min-height: 32px;
+	padding: 0 0 0 16px;
+      }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--white mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Rowan Decker</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#about" class="mdl-layout__tab is-active">About Me</a>
+          <a href="#experience" class="mdl-layout__tab">Experience</a>
+          <a href="#projects" class="mdl-layout__tab">Projects</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="about">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <header class="smdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
+	      <img id="avatar" src="avatar.jpg"/>
+            </header>
+            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+              <div class="mdl-card__supporting-text">
+		I am currently studying in the engineering department of Santa Clara University, and will graduate with a degree in Computer Science and Electrical Engineering.<br/>
+		<br/>
+		I am a technology enthusiast and always tinker with anything I can get my hands on. I have used Linux for over five years, programmed additions to games in Python and Lua, created Android apps in Java, written native applications for TI calculators in z80 asm, tinkered with keyboard firmware in C, designed websites for people in PHP, and more. Even this website is hosted off of one of my machines.
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Skills</h4>
+		<ul class="skill-list mdl-list">
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content">
+		      <i class="mdl-list__item-icon devicon-linux-plain"></i>
+		      <span>Linux Development</span>
+		      <span class="mdl-list__item-text-body">C, C++, Python, Bash</span>
+		    </span>
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content ">
+		    <i class="mdl-list__item-icon devicon-android-plain"></i>
+		    <span>Android Development</span>
+		    <span class="mdl-list__item-text-body">Java, XML</span>
+		    </span>
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content">
+		      <i class="mdl-list__item-icon devicon-html5-plain"></i>
+		      <span>Web Development</span>
+		      <span class="mdl-list__item-text-body">PHP, HTML, CSS, JS, MySQL</span>
+		    </span>
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content">
+		      <i class="mdl-list__item-icon fa fa-microchip" aria-hidden="true"></i>
+		      <span>Circuit Design</span>
+		      <span class="mdl-list__item-text-body">Kicad, LTSpice, Arduino, Teensy</span>
+		    </span>
+		  </li>
+		</ul>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Contact</h4>
+		<ul class="skill-list mdl-list">
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content ">
+		    <i class="mdl-list__item-icon material-icons">email</i>
+		    <span>Email</span>
+		    <span class="mdl-list__item-text-body">
+		      <a href="mailto:rowan@rowandecker.com">rowan@rowandecker.com</a>
+		    </span>
+		    </span>
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content">
+		      <i class="mdl-list__item-icon fa fa-linkedin-square" aria-hidden="true"></i>
+		      <span>LinkedIn</span>
+		      <span class="mdl-list__item-text-body">
+			<a href="https://www.linkedin.com/in/rowandecker">https://www.linkedin.com/in/rowandecker</a>
+		      </span>
+		    </span>
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--three-line">
+		    <span class="mdl-list__item-primary-content">
+		      <i class="mdl-list__item-icon devicon-github-plain"></i>
+		      <span>Github</span>
+		      <span class="mdl-list__item-text-body">
+			<a href="https://github.com/Smasher816">https://github.com/Smasher816</a>
+		    </span>
+		  </li>
+		</ul>
+              </div>
+            </div>
+          </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="experience">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Jobs</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+		    <img src="https://pbs.twimg.com/profile_images/662718206667198464/n7Xq9DiR.jpg" />
+		  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Massdrop</h5>
+		  Worked in Node, React, and PHP to create and improve both employee and user facing pages. 
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+		    <img src="http://www.bunch-consulting.com/wp-content/uploads/2014/02/Business-Card-Logo-Small.png" />
+		  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Bunch Consulting Inc.</h5>
+		  Created webpages with PHP, HTML, CSS, and Javascript. Set up webserver and managed MySQL database.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+		    <img src="https://lh3.googleusercontent.com/-wpOmTnDQpfc/AAAAAAAAAAI/AAAAAAAAAbI/8-8sj2kzw4A/s60-p-rw-no/photo.jpg" />
+		  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Google Code-In</h5>
+		  Helped Hedgewars team with various tasks including implementing a new command line and configuration parser.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+		    <img src="http://www.fire-program.org/wp-content/uploads/2014/07/cropped-FIRE_Logo_no-tag_color-e1410205321246.jpg" />
+		  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>F.I.R.E.</h5>
+		  Redesigned the organizations website and developed plans to increase the groups awareness and social media impact.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle">
+		    <img src="http://www.stpatrickkc.com/StPatCrestGreenBkgdFinal.jpg" />
+		  </div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>St. Patrick School</h5>
+		  Taught a group of elementary students the basics of programming, in the context of Python.
+		  Each student progressed from simple text based number games to simple graphical games requiring mouse and keyboard interaction.
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Santa Clara University</h4>
+		<!-- <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Santa_Clara_U_Seal.svg/1024px-Santa_Clara_U_Seal.svg.png" style="width:64px; height:64px"/> -->
+		<h6>Computer Engineering</h6>
+		<ul class="class-list mdl-list">
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Algorithms</span>
+		      <span class="mdl-list__item-sub-title">COEN 179</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Operating Systems</span>
+		      <span class="mdl-list__item-sub-title">COEN 177</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Computer Networks</span>
+		      <span class="mdl-list__item-sub-title">COEN 146</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Programming Languages</span>
+		      <span class="mdl-list__item-sub-title">COEN 171</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Embedded Systems</span>
+		      <span class="mdl-list__item-sub-title">COEN 20</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Advanced Data Structures</span>
+		      <span class="mdl-list__item-sub-title">COEN 70</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Discrete Math</span>
+		      <span class="mdl-list__item-sub-title">COEN 19</span>
+		    </span>	
+		  </li>
+		</ul>
+
+		<h6>Electrical Engineering</h6>
+		<ul class="demo-list-item mdl-list">
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Digital IC Design</span>
+		      <span class="mdl-list__item-sub-title">ELEN 153</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Logic Design</span>
+		      <span class="mdl-list__item-sub-title">ELEN 21</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Electromagnetics</span>
+		      <span class="mdl-list__item-sub-title">ELEN 104</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Electronic Circuits</span>
+		      <span class="mdl-list__item-sub-title">ELEN 115</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Electric Circuits I/II</span>
+		      <span class="mdl-list__item-sub-title">ELEN 50/100</span>
+		    </span>	
+		  </li>
+		</ul>
+
+		<h6>Core</h6>
+		<ul class="demo-list-item mdl-list">
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Probability and Statistics</span>
+		      <span class="mdl-list__item-sub-title">AMTH 108</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Differential Equations</span>
+		      <span class="mdl-list__item-sub-title">AMTH 106</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Linear Algebra</span>
+		      <span class="mdl-list__item-sub-title">MATH 53</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Calculus IV</span>
+		      <span class="mdl-list__item-sub-title">MATH 14</span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item mdl-list__item--two-line">
+		    <span class="mdl-list__item-primary-content">
+		      <span>Physics IV</span>
+		      <span class="mdl-list__item-sub-title">PHYS 34</span>
+		    </span>	
+		  </li>
+		</ul>
+
+		<h6>Clubs</h6>
+		<ul class="demo-list-item mdl-list">
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">ACM</span>	
+		  </li>
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">IEEE</span>	
+		  </li>
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">Maker Lab</span>	
+		  </li>
+		</ul>
+              </div>
+	    </div>
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Rockhurst High School</h4>
+		<ul class="class-list mdl-list">
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">
+		      <span class="mdl-list__item-primary-content">
+			Helped IT with many tasks
+		      </span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">
+		      <span class="mdl-list__item-primary-content">
+			Went on service trips to Belize and Mexico to lay foundations for houses
+		      </span>
+		    </span>	
+		  </li>
+		</ul>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>St. Patrick Grade School</h4>
+		<ul class="class-list mdl-list">
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">
+		      <span class="mdl-list__item-primary-content">
+			Founded the Tech Club.<br/>
+			Made an unbeatable game of tick tac toe winning the science fair.<br/>
+			Created a steganography program hiding cryptographically messages in photos, videos, and audio files.<br/>
+		      </span>
+		    </span>	
+		  </li>
+		  <li class="mdl-list__item">
+		    <span class="mdl-list__item-primary-content">
+		      <span class="mdl-list__item-primary-content">
+			Went on service trips to Belize and Mexico to lay foundations for houses
+		      </span>
+		    </span>	
+		  </li>
+		</ul>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="projects">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Android</h4>
+		Added options for 4x4, 5x5, etc pattern lock screens to CyanogenMod.<br/>
+		Ported TWRP to the Samsung Galaxy S1 Captivate.<br>
+		Added framebuffer support and many other features to tux-mind's dual boot project for the Asus Transformer Prime TF201.<br/>
+		Developed 3rd party Pandora application following Google's design guidelines.<br/>
+		Created a kernel updater and configuration app.<br/>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Linux</h4>
+		Maintained an Arch Linux install for 4+ years.<br/>
+		Familiar with many unix tools and common configuration files.<br/>
+		Created many bash and python scripts.<br/>
+		Created a password manager based upon secure one way hashes.<br/>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Hardware</h4>
+		Helped beta test the Infinity keyboard and found a severe flashing issue.<br/>
+		Converted my HHKB to use a Teensy microcontroller instead of the original pcb.<br/>
+		Added bluetooth hid support to my HHKB with help from TMK's firmware.<br/>
+		Designed a PCB in kicad for flashing parallel EEPROM chips.<br/>
+		Created a music reactive RGB LED strip controller from scratch.<br/>
+		Built a Millet MOSFET Max tube headphone amplifier.<br/>
+		Built a planck mechanical keyboard.<br/>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Games</h4>
+		Played with hl2 multiplayer modding in C++.<br/>
+		Made many BF2 sandbox python plugins.<br/>
+		Created a game of asteroids in python.<br/>
+		Designed a map for Portal.<br/>
+		Created Gmod addons in Lua.<br/>
+		Created a Diablo III gem calculator GUI in Java.<br/>
+		Created skins and attempted basic 3d modeling.<br/>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Misc</h4>
+		Learned z80 asm to create a TI-84 calculator application.<br/>
+		Developped a modular java program with dynamically loaded plugins.<br/>
+		Created a typing test program with SDL; currently in use at St. Patricks school.<br/>
+	      </div>
+	    </div>
+	  </section>
+          <section class="section--footer mdl-color--white mdl-grid">
+          </section>
+	</div>
+      </main>
+	<footer class="mdl-mini-footer">
+	  <div class="mdl-mini-footer__left-section">
+	    Self hosted with nginx on Arch Linux
+	  </div>
+	</footer>
+    </div>
+    <a href="https://github.com/smasher816/rowandecker.com" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://use.fontawesome.com/3eb11dc01b.js"></script>
+  </body>
+</html>
